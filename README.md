@@ -7,8 +7,9 @@ Steps to create new projects
     -- envname\scripts\activate
 # install django
     -- pip install django
-# runserver
+#  start project and runserver
     --  django-admin startproject projectname
+    --  cd projectName
     --  python manage.py runserver
 # runapp
     -- django-admin startapp appname
