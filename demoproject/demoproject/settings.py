@@ -53,7 +53,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'demoproject.urls'
 
-Templates_Dir = os.path.join(BASE_DIR,'Templates')
+Templates_Dir = os.path.join(BASE_DIR,'templates')
 
 TEMPLATES = [
     {

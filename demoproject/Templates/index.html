@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Django App</title>
+    {% load static %}
+    {% load bootstrap5 %} 
+    {% bootstrap_css %} 
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+   <div class="container-fluid">
+    {% include 'navbar.html' %}
+
+    {% block content %}
+
+    {% endblock %} 
+
+    {% include 'footer.html' %}
+   </div>
+   <script src="{% static 'js/app.js' %}"></script>
+  </body>
+</html>

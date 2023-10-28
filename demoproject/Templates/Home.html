@@ -1,28 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Home</title>
-    {% load static %}
-    {% load bootstrap5 %} 
-    {% bootstrap_css %} 
-    {% bootstrap_javascript %}
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="{% static 'js/app.js'%}"></script>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <ul class="nav bg-info">
-          <li class="nav-item">
-            <a class="nav-link link-light" href="../">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-light" href="about_page_id">About</a>
-          </li>
-        </ul>
-      </div>
+{% extends 'index.html' %}
 
-      <h2 style="text-align: center">Image  Gallary</h2>
+<!--Block content goes below-->
+
+
+  {% block content %}
+  {% load static %}
+  <h2 style="text-align: center">Image  Gallary</h2>
       <div class="row">
         <div class="col-4 col-md-4">
           <div class="card">
@@ -56,6 +39,5 @@
       <div class="col-3 p-1">
         <button class="btn btn-primary" onclick="clickBtn()">click me</button>
       </div>
-    </div>
-  </body>
-</html>
+
+  {% endblock %}
