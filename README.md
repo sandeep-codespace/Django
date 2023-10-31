@@ -13,3 +13,9 @@ Steps to create new projects
     --  python manage.py runserver
 # runapp
     -- django-admin startapp appname
+
+# Intsall external dependencies
+# install boostrap
+    -- pip install django-bootstrap-v5
+    update intsalled app in settings.py file
+    update INSTALLED_APPS and add bootstrap5 in it

@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+<!--Block content goes below-->
+{% block childTemplate %}
+{% load static %}
+<div class="container">
+     <h1 class="" align="center">Bootstrap Example Using CDN</h1>
+     <div class="row">
+      <div class="col-sm-5" style="border: 1px solid red;">
+         1
+      </div>
+
+      <div class="col-sm-5 offset-sm-1" style="border: 1px solid green;">
+        2
+     </div>
+     </div>
+</div>
+{% endblock %}
